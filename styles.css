@@ -78,22 +78,60 @@ span {
 }
 
 .wrapper {
-  background-color: #f1f1f1;
+  background-color: #f1efe9;
   margin: 0px;
 }
 
 .header {
   background-color: #252525;
-  padding: 20px 0;
+  padding: 20px;
+}
+
+.header__content {
+  max-width: 80rem;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__item {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: "Oswald", "Ariel", sans-serif;
+  font-size: 2rem;
+  padding-left: 2rem;
 }
 
 .header__title {
   color: #f1f1f1;
   text-transform: uppercase;
-  max-width: 70rem;
+  max-width: 73rem;
   width: 100%;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.home-banner {
+  width: 100%;
+  height: calc(100vh - 200px);
+  object-fit: cover;
+}
+
+.site-description {
+  background-color: white;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.site-description__text {
+  max-width: 65rem;
+  line-height: 1.4;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .posts {
@@ -105,9 +143,18 @@ span {
   grid-gap: 60px;
 }
 
+.posts__title {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  text-align: center;
+  font-size: 2.45rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 2rem;
+}
+
 .post__title {
   font-size: 2rem;
-  text-transform: uppercase;
 }
 
 .post__image {
@@ -132,6 +179,6 @@ span {
 }
 
 .footer__text {
-  color: white;
+  color: whitesmoke;
   text-align: center;
 }
