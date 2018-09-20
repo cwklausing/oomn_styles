@@ -2,7 +2,7 @@ function resizeGridItem(item){
   var grid = document.getElementsByClassName("grid-container")[0];
   var rowHeight = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-auto-rows'));
   var rowGap = parseInt(window.getComputedStyle(grid).getPropertyValue('grid-row-gap'));
-  var rowSpan = Math.ceil((item.querySelector('.summary').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
+  var rowSpan = Math.ceil((item.querySelector('.post__summary').getBoundingClientRect().height+rowGap)/(rowHeight+rowGap));
   item.style.gridRowEnd = "span " + rowSpan;
 }
 

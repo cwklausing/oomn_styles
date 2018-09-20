@@ -83,7 +83,7 @@ span {
 }
 
 .header {
-  background-color: #252525;
+  background-color: #1f1f1f;
   padding: 20px;
 }
 
@@ -103,7 +103,9 @@ span {
   padding-left: 2rem;
 }
 
-.header__title {
+.header__title a {
+  font-size: 3rem;
+  text-decoration: none;
   color: #f1f1f1;
   text-transform: uppercase;
   max-width: 73rem;
@@ -116,7 +118,7 @@ span {
 
 .home-banner {
   width: 100%;
-  height: calc(100vh - 200px);
+  height: 70vh;
   object-fit: cover;
 }
 
@@ -130,7 +132,6 @@ span {
 .site-description__text {
   max-width: 65rem;
   line-height: 1.4;
-  font-weight: bold;
   letter-spacing: 1px;
 }
 
@@ -153,6 +154,10 @@ span {
   padding: 2rem;
 }
 
+.post {
+
+}
+
 .post__title {
   font-size: 2rem;
 }
@@ -161,12 +166,17 @@ span {
   height: 300px;
   width: 100%;
   object-fit: cover;
-  margin: 20px 0
+  margin: 20px 0;
+}
+
+.post__summary {
+
 }
 
 .post__excerpt {
   font-size: 1.3rem;
   line-height: 1.3;
+  padding: 0 10px;
 }
 
 .read-more {
@@ -175,7 +185,7 @@ span {
 
 .footer {
   padding: 2em;
-  background-color: #252525
+  background-color: #1f1f1f;
 }
 
 .footer__text {
